@@ -11,13 +11,17 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <header class="header">
-      <div class="container">
-        <nav class="header-navigation">
+      <div class="container main-nav">
+        <nav class="header-nav">
           <a lang="en" href="https://goit.ua/" class="header-logo link"
             >Web<span class="header-studio">Studio</span></a
           >
@@ -31,9 +35,7 @@
             <li class="header-item"><a href="" class="header-link link">Контакты</a></li>
           </ul>
         </nav>
-      </div>
 
-      <div class="container">
         <ul class="header-contacts-list list">
           <li class="header-contacts-item">
             <a href="mailto:info@devstudio.com" class="header-contacts-link link"
@@ -48,59 +50,48 @@
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero section">
         <div class="container">
-          <h1 class="hero-title">
-            Эффективные решения<br />
-            для вашего бизнеса
-          </h1>
+          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="hero-button">
             <span class="hero-button-text">Заказать услугу</span>
           </button>
         </div>
       </section>
 
-      <section class="qualities">
+      <section class="qualities section">
         <div class="container">
-          <h2 hidden>Особенности</h2>
+          <h2 visually-hidden>Особенности</h2>
           <ul class="qualities-list list">
             <li class="qualities-item">
               <h3 class="qualities-title">Внимание к деталям</h3>
               <p class="qualities-description">
-                Идейные соображения, а также<br />
-                начало повседневной работы по<br />
-                формированию позиции.
+                Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
             <li class="qualities-item">
               <h3 class="qualities-title">Пунктуальность</h3>
               <p class="qualities-description">
-                Задача организации, в особенности<br />
-                же рамки и место обучения кадров<br />
-                влечет за собой.
+                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
             <li class="qualities-item">
               <h3 class="qualities-title">Планирование</h3>
               <p class="qualities-description">
-                Равным образом консультация с<br />
-                широким активом в значительной<br />
-                степени обуславливает.
+                Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
             <li class="qualities-item">
               <h3 class="qualities-title">Современные технологии</h3>
               <p class="qualities-description">
-                Значимость этих проблем настолько<br />
-                очевидна, что реализация плановых<br />
-                заданий.
+                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="skills">
+      <section class="skills section">
         <div class="container">
           <h2 class="skills-title secondary-title">Чем мы занимаемся</h2>
           <ul class="skills-list list">
@@ -117,29 +108,37 @@
         </div>
       </section>
 
-      <section class="team">
+      <section class="team section">
         <div class="container">
           <h2 class="team-title secondary-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-item">
               <img src="./images/team_member1.jpg" alt="Игорь Демьяненко" width="270" />
-              <h3 class="team-member-title">Игорь Демьяненко</h3>
-              <p lang="en" class="team-member-position">Product Designer</p>
+              <div class="team-member-card">
+                <h3 class="team-member-title">Игорь Демьяненко</h3>
+                <p lang="en" class="team-member-position">Product Designer</p>
+              </div>
             </li>
             <li class="team-item">
               <img src="./images/team_member2.jpg" alt="Ольга Репина" width="270" />
-              <h3 class="team-member-title">Ольга Репина</h3>
-              <p lang="en" class="team-member-position">Frontend Developer</p>
+              <div class="team-member-card">
+                <h3 class="team-member-title">Ольга Репина</h3>
+                <p lang="en" class="team-member-position">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-item">
               <img src="./images/team_member3.jpg" alt="Николай Тарасов" width="270" />
-              <h3 class="team-member-title">Николай Тарасов</h3>
-              <p lang="en" class="team-member-position">Marketing</p>
+              <div class="team-member-card">
+                <h3 class="team-member-title">Николай Тарасов</h3>
+                <p lang="en" class="team-member-position">Marketing</p>
+              </div>
             </li>
             <li class="team-item">
               <img src="./images/team_member4.jpg" alt="Михаил Ермаков" width="270" />
-              <h3 class="team-member-title">Михаил Ермаков</h3>
-              <p lang="en" class="team-member-position">UI Designer</p>
+              <div class="team-member-card">
+                <h3 class="team-member-title">Михаил Ермаков</h3>
+                <p lang="en" class="team-member-position">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -159,12 +158,12 @@
               >
             </li>
             <li class="footer-item">
-              <a href="tel:+380991111111" class="footer-contacts-link link">+38 099 111 11 11</a>
-            </li>
-            <li class="footer-item">
               <a href="mailto:info@example.com" class="footer-contacts-link link"
                 >info@example.com</a
               >
+            </li>
+            <li class="footer-item">
+              <a href="tel:+380991111111" class="footer-contacts-link link">+38 099 111 11 11</a>
             </li>
           </ul>
         </address>
